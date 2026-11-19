@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#dceeff">
+  <title>A birthday made just for Asri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sky-decor" aria-hidden="true">
+    <span class="float-sticker gift">🎁</span><span class="float-sticker balloons">🎈</span>
+    <span class="float-sticker cupcake">🧁</span><span class="float-sticker flowers">💐</span>
+    <span class="float-sticker candy">🍬</span><span class="float-sticker flower">🌼</span>
+    <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="cloud cloud-three"></div>
+  </div>
+
+  <section class="birthday-gate" id="birthdayGate" aria-label="Birthday password">
+    <div class="gate-cloud cloud-a"></div><div class="gate-cloud cloud-b"></div><div class="gate-cloud cloud-c"></div>
+    <span class="gate-sticker gate-balloons" aria-hidden="true">🎈</span>
+    <span class="gate-sticker gate-cupcake" aria-hidden="true">🧁</span>
+    <span class="gate-sticker gate-party" aria-hidden="true">🥳</span>
+    <div class="gate-card">
+      <div class="gate-birthday-logo">HAPPY<br>BIRTHDAY</div>
+      <p class="eyebrow">A LITTLE SURPRISE AWAITS</p>
+      <h1>For Asri</h1>
+      <p class="gate-instruction">Enter your special date to open it</p>
+      <div class="gate-date-pill">🔑 A little birthday surprise 💗</div>
+      <div class="pin-dots" id="pinDots" aria-label="Four digit password">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <p class="gate-error" id="gateError" aria-live="polite"></p>
+      <div class="keypad" id="keypad">
+        <button type="button" data-digit="1">1</button><button type="button" data-digit="2">2</button><button type="button" data-digit="3">3</button>
+        <button type="button" data-digit="4">4</button><button type="button" data-digit="5">5</button><button type="button" data-digit="6">6</button>
+        <button type="button" data-digit="7">7</button><button type="button" data-digit="8">8</button><button type="button" data-digit="9">9</button>
+        <span class="keypad-spacer"></span><button type="button" data-digit="0">0</button><button type="button" data-action="backspace" aria-label="Delete last digit">⌫</button>
+      </div>
+    </div>
+  </section>
+  <div class="grand-sprinkles" id="grandSprinkles" aria-hidden="true"></div>
+
+  <main class="birthday-content locked" id="birthdayContent">
+    <section class="hero" id="top">
+      <div class="hero-balloon" aria-hidden="true">🎈</div>
+      <div class="hero-gift" aria-hidden="true">🎁</div>
+      <p class="eyebrow">✦ A birthday made just for you ✦</p>
+      <p class="script">Happy Birthday,</p>
+      <h1>Asri</h1>
+      <div class="year-pill birthday-date">🎂 &nbsp;19 November&nbsp; 🎂</div>
+      <p class="hero-copy">Your day. Your memories. Your little world. Happy Birthday,<br><strong>Asri</strong> ✨</p>
+      <a class="scroll-cue" href="#memories">SCROLL <span>⌄</span></a>
+    </section>
+
+    <section class="section memory-section" id="memories">
+      <p class="eyebrow">A LITTLE MEMORY GAME</p>
+      <h2>Press for a memory</h2><div class="underline"></div>
+      <button class="camera-button" id="cameraButton" aria-label="Reveal a memory"><span>📸</span></button>
+      <p class="subtle" id="memoryCounter">Tap the camera · 5 memories left</p>
+      <div class="memory-reveals" id="memoryReveals" aria-live="polite"></div>
+      <p class="tiny-note" id="memoryHint">Every picture holds a little piece of a beautiful story ✨</p>
+    </section>
+
+    <section class="section cake-section" id="cake">
+      <p class="eyebrow">A SWEET LITTLE RITUAL</p>
+      <h2>Cut the cake</h2><div class="underline"></div>
+      <div class="cake-stage" id="cakeStage" aria-label="Drag the knife across the cake to cut it">
+        <div class="cake-shadow"></div>
+
+        <div class="cake-whole" id="cakeWhole">
+          <div class="cake-top">
+            <span class="icing-drizzle drizzle-a"></span>
+            <span class="icing-drizzle drizzle-b"></span>
+            <span class="icing-drizzle drizzle-c"></span>
+            <span class="icing-drizzle drizzle-d"></span>
+            <span class="strawberry berry-a">🍓</span>
+            <span class="strawberry berry-b">🍓</span>
+            <span class="strawberry berry-c">🍓</span>
+            <span class="cake-leaves">🌿</span>
+            <span class="choco-stick choco-a"></span>
+            <span class="choco-stick choco-b"></span>
+            <span class="choco-stick choco-c"></span><span class="cartoon-candle candle-one"></span><span class="cartoon-candle candle-two"></span><span class="cartoon-candle candle-three"></span>
+          </div>
+          <div class="cake-cream-band"></div>
+          <div class="cake-pink-side">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="cake-bottom-rim"></div>
+        </div>
+
+        <div class="cake-half cake-left" aria-hidden="true">
+          <div class="cake-half-inner">
+            <div class="cake-top">
+              <span class="icing-drizzle drizzle-a"></span><span class="icing-drizzle drizzle-b"></span>
+              <span class="icing-drizzle drizzle-c"></span><span class="icing-drizzle drizzle-d"></span>
+              <span class="strawberry berry-a">🍓</span><span class="strawberry berry-b">🍓</span>
+              <span class="strawberry berry-c">🍓</span><span class="cake-leaves">🌿</span>
+              <span class="choco-stick choco-a"></span><span class="choco-stick choco-b"></span>
+              <span class="choco-stick choco-c"></span><span class="cartoon-candle candle-one"></span><span class="cartoon-candle candle-two"></span><span class="cartoon-candle candle-three"></span>
+            </div>
+            <div class="cake-cream-band"></div>
+            <div class="cake-pink-side"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="cake-bottom-rim"></div>
+          </div>
+        </div>
+        <div class="cake-half cake-right" aria-hidden="true">
+          <div class="cake-half-inner">
+            <div class="cake-top">
+              <span class="icing-drizzle drizzle-a"></span><span class="icing-drizzle drizzle-b"></span>
+              <span class="icing-drizzle drizzle-c"></span><span class="icing-drizzle drizzle-d"></span>
+              <span class="strawberry berry-a">🍓</span><span class="strawberry berry-b">🍓</span>
+              <span class="strawberry berry-c">🍓</span><span class="cake-leaves">🌿</span>
+              <span class="choco-stick choco-a"></span><span class="choco-stick choco-b"></span>
+              <span class="choco-stick choco-c"></span><span class="cartoon-candle candle-one"></span><span class="cartoon-candle candle-two"></span><span class="cartoon-candle candle-three"></span>
+            </div>
+            <div class="cake-cream-band"></div>
+            <div class="cake-pink-side"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="cake-bottom-rim"></div>
+          </div>
+        </div>
+
+        <div class="cake-knife" id="cakeKnife" aria-hidden="true">
+          <span class="knife-blade"></span><span class="knife-handle"></span>
+        </div>
+      </div>
+      <p class="subtle" id="cakeInstruction">Hold the knife and drag across the cake to slice it</p>
+      <div class="cake-result hidden" id="cakeResult">
+        <div class="cake-slices"><span>🍰</span><span>🍰</span><span>🍰</span></div>
+        <p>A slice for you, a slice for me ✨</p>
+        <em>Make a wish while you're at it — happy birthday!</em>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <p class="eyebrow">A LITTLE GALLERY</p>
+      <h2>Us, in pictures</h2><div class="underline"></div>
+      <div class="photo-grid gallery-ten">
+        <figure class="polaroid"><img src="assets/gallery-1.jpg" alt="Two friends taking a selfie with pink heart stickers" loading="lazy"></figure>
+        <figure class="polaroid"><img src="assets/gallery-2.jpg" alt="Two friends in matching pink traditional outfits" loading="lazy"></figure>
+        <figure class="polaroid tilt"><img src="assets/gallery-3.jpg" alt="Friends taking a selfie in a classroom" loading="lazy"></figure>
+        <figure class="polaroid"><img src="assets/gallery-4.jpg" alt="Two friends in yellow and pink outfits" loading="lazy"></figure>
+        <figure class="polaroid"><img src="assets/gallery-5.jpg" alt="Friends posing with playful dog filter stickers" loading="lazy"></figure>
+        <figure class="polaroid tilt"><img src="assets/gallery-6.jpg" alt="Three friends taking a classroom selfie" loading="lazy"></figure>
+        <figure class="polaroid"><img src="assets/gallery-7.jpg" alt="Three friends in a black and white selfie" loading="lazy"></figure>
+        <figure class="polaroid"><img src="assets/gallery-8.jpg" alt="Two friends outdoors" loading="lazy"></figure>
+        <figure class="polaroid tilt"><img src="assets/gallery-9.jpg" alt="Two friends taking a close-up selfie" loading="lazy"></figure>
+        <figure class="polaroid"><img src="assets/gallery-10.jpg" alt="Three friends together in traditional outfits" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section wish-section" id="wish">
+      <p class="eyebrow">A BIRTHDAY RITUAL</p>
+      <h2>Make a wish</h2><div class="underline"></div>
+      <p class="wish-copy">Close your eyes · think of something beautiful · then blow out the candle</p>
+      <button class="candle-button" id="candleButton" aria-label="Blow out the candle">
+        <span class="flame" id="flame"></span><span class="candle">🕯️</span>
+      </button>
+      <p class="tap-label" id="candleLabel">✧ &nbsp; TAP THE CANDLE &nbsp; ✧</p>
+      <p class="wish-complete hidden" id="wishComplete">May every beautiful thing you hoped for find its way to you 🌸</p>
+      <div class="confetti-field" id="confettiField" aria-hidden="true"></div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <p class="eyebrow">FROM MY HEART</p>
+      <h2>A note for you</h2><div class="underline"></div>
+      <article class="letter">
+        <div class="letter-date">A LITTLE NOTE FOR YOU</div>
+        <h3>Dear Asri...</h3>
+        <p>naku asalu em chepalo kuda ardamkatledu al oka roju nnu low ga unapudu na life loki vachav and alaney epatiki na life lo undipoyav.</p>
+        <p>oka kotha parichayam intha mana life lo undi potadi antey idenemo. Epudu ilaney happy ga undu. enni tensions, badhalu, kastalu enni vachina kani please don't loose ur hope. I know u r the strongest girl in our gang so be as strong as that. Nuvu ela unna, ekkkada unna kani we will be as the same.</p>
+        <p>manam matladukunna , matladukoka poina kani I bet that our bond remains strong no matter what. I love sooo mushhh Asriiiiii...........</p>
+        <p class="signature">with so much love,<br>Neha 💗</p>
+        <span class="letter-flower">🌺</span>
+      </article>
+    </section>
+
+    <section class="section wishes-section" id="wishes">
+      <p class="eyebrow">WISHES FOR YOU</p>
+      <h2>Everything I hope you get</h2><div class="underline"></div>
+      <div class="wish-grid">
+        <button class="wish-card"><small>01</small><span>🌟</span><b>Tap to reveal</b><p>May every single day bring you something that makes your soul light up ✨</p></button>
+        <button class="wish-card"><small>02</small><span>🌸</span><b>Tap to reveal</b><p>Adventures that take your breath away — for exactly the right reasons 🌷</p></button>
+        <button class="wish-card"><small>03</small><span>💕</span><b>Tap to reveal</b><p>Love that is consistent, warm, and completely certain of you 💗</p></button>
+        <button class="wish-card"><small>04</small><span>☕</span><b>Tap to reveal</b><p>Perfect coffee, slow mornings, and exactly the peace you deserve ☁️</p></button>
+        <button class="wish-card"><small>05</small><span>🐱</span><b>Tap to reveal</b><p>All the little joys your heart could ever desire, whenever you need them 🐾</p></button>
+        <button class="wish-card"><small>06</small><span>✨</span><b>Tap to reveal</b><p>A year so good it makes every year before feel like the warm-up 🌈</p></button>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-balloons">🎈</div>
+      <div class="heart">♥</div>
+      <h2>Just for you, <span>Asri.</span></h2>
+      <p>No matter where life takes us, I hope you never forget this: You are loved. You are appreciated. And today, the world is a little better because you exist.</p>
+      <div class="closing-line"></div>
+      <h3>With all my love, Neha 💕</h3>
+      <small>HAPPY BIRTHDAY · YOU ARE SO LOVED · ALWAYS</small>
+    </section>
+  </main>
+  <footer>MADE WITH LOVE · A LITTLE BIRTHDAY WEBSITE</footer>
+  <script src="script.js"></script>
+</body>
+</html>
